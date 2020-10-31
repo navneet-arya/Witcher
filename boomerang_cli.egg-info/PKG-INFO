@@ -1,8 +1,8 @@
 Metadata-Version: 1.2
-Name: boomerang-cli
-Version: 1.0.0
+Name: witcher-cli
+Version: 1.0.2
 Summary: Command line tool that automatically fetches Stack Overflow after complier error.
-Home-page: https://github.com/navneet-arya/Boomerang
+Home-page: https://github.com/navneet-arya/Witcher
 Author: narya
 Author-email: navneet.arya1994@gmail.com
 License: MIT
