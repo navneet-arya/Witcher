@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: boomerang-cli
+Version: 1.0.0
+Summary: Command line tool that automatically fetches Stack Overflow after complier error.
+Home-page: https://github.com/navneet-arya/Boomerang
+Author: narya
+Author-email: navneet.arya1994@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: stackoverflow stack overflow debug debugging error-handling compile errors error message cli search commandline
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires: BeautifulSoup4
+Requires: requests
+Requires: urllib3
+Requires: urwid
+Requires-Python: >= 3
