@@ -1,5 +1,5 @@
 try:
-	from setuptools import setup
+	from setuptools import setup, find_packages
 except ImportError:
 	from disutils.core import setup
 
@@ -14,10 +14,10 @@ if sys.version_info[:3] < (3,0,0):
 # 	readme = file.read()
 
 setup(
-	name="boomerang-cli",
-	version="1.0.0",
+	name="witcher-cli",
+	version="1.0.2",
 	description="Command line tool that automatically fetches Stack Overflow after complier error.",
-	url="https://github.com/navneet-arya/Boomerang",
+	url="https://github.com/navneet-arya/Witcher",
 	author="narya",
 	author_email="navneet.arya1994@gmail.com",
 	classifiers=[
@@ -29,8 +29,8 @@ setup(
 	],
 	keywords = "stackoverflow stack overflow debug debugging error-handling compile errors error message cli search commandline",
 	include_package_data =True,
-	packages = ["src"],
-	entry_points={"console_scripts":["src = src.boomerang:main"]},
+	packages = find_packages(),
+	entry_points={"console_scripts":["witcher = src.witcher:main"]},
 	install_requires = ["BeautifulSoup4", "requests", "urllib3", "urwid"],
 	requires=["BeautifulSoup4", "requests", "urllib3", "urwid"],
 	python_requires= ">= 3",
