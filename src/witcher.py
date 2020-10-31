@@ -142,7 +142,7 @@ def execute(command):
 
 def print_help():
 	""" Prints usage instructions. """
-	print("{0}Witcher, v0.0.1 - made by @Navneet arya{1}\n".format(BOLD, END))
+	print("{0}Witcher, v1.0.2 - made by @Navneet arya{1}\n".format(BOLD, END))
 	print("Commadn-line tool that automatically searches Stack Overflow and displays results in your terminal when you get a compiler error.")
 	print("\n\n{0}Usage:{1} $witcher {2}[file_name]{1}".format(UNDERLINE, END, YELLOW))
 	print("\n$python3 {0}test.py{1} => $witcher {0}test.py{1}".format(YELLOW, END))
@@ -440,6 +440,7 @@ def get_error_msg(error, language):
 def main():
 	if len(sys.argv) == 1 or sys.argv[1].lower() == "-h" or sys.argv[1].lower() == '--help':
 		print_help()
+		return
 
 	elif sys.argv[1].lower() == "-q" or sys.argv[1].lower() == '--query':
 		query = ' '.join(sys.argv[2:])
